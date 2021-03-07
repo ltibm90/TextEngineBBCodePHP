@@ -9,7 +9,7 @@ function BBCodeOrnek()
 	global $evulator;
 	$evulator->SetTagWR("*", new BBCodeInfo("[{%TagName}]{%Text}[/{%TagName%}]"));
 	$evulator->SetMultipleTagWR(["b", "i", "u", "s"], new BBCodeInfo("<{%TagName}>{%Text}</{%TagName}>"));
-	$bburl = new BBCodeInfo("<a href=\"{%TagAttrib}\">{%Text}</url>");
+	$bburl = new BBCodeInfo("<a href=\"{%TagAttrib}\">{%Text}</a>");
 	$bburl->SetValidator(
                 function(&$validator, &$tag)
                 {
