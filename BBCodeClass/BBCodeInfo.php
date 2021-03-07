@@ -28,11 +28,11 @@ class BBCodeInfo extends PropertyBase
 	public $UseEval;
 	private $tagText;
 	private $tagformat;
-	public function Get_Text()
+	public function Get_TagText()
 	{
 		return $this->tagText;
 	}
-	public function Set_Text($value)
+	public function Set_TagText($value)
 	{
 		$this->tagText = $value;
 		$this->tagformat = null;
